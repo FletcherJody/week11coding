@@ -10,50 +10,59 @@
 </head>
 
 <body>
-    <!-- Using any of the tools you've worked with so far, create a game of Tic-Tac-Toe.
-1.Create a Tic-Tac-Toe game grid using your HTML element of choice.
-2. When a cell in the grid is clicked, an X or O should appear in that spot depending on whose turn it is.
-3. A heading should say whether it is X's or O's turn and change with each move made.
-4. A button should be available to clear the grid and restart the game.
-5. When a player has won, or the board is full and the game results in a draw, a Bootstrap alert or similar Bootstrap component should appear across the screen announcing the winner. -->
+
     <h1>Tic Tac Toe</h1>
 
     <div class="container text-center">
+        <h2 id="turn"> It is X's turn!</h2>
         <div class="row row-cols-3">
             <div class="col border d-flex justify-content-center">
-                <button type="button" class="btn btn-light">click</button>
+                <button type="button" class="btn btn-light"></button>
             </div>
-            <div class="col border d-flex justify-content-center"><button type="button"
-                    class="btn btn-light">click</button></div>
-            <div class="col border d-flex justify-content-center"><button type="button"
-                    class="btn btn-light">click</button></div>
+            <div class="col border d-flex justify-content-center">
+                <button type="button" class="btn btn-light"></button>
+            </div>
+            <div class="col border d-flex justify-content-center">
+                <button type="button" class="btn btn-light"></button>
+            </div>
         </div>
     </div>
     <div class="container text-center">
         <div class="row row-cols-3">
-            <div class="col border d-flex justify-content-center"><button type="button"
-                    class="btn btn-light">click</button></div>
-            <div class="col border d-flex justify-content-center"><button type="button"
-                    class="btn btn-light">click</button></div>
-            <div class="col border d-flex justify-content-center"><button type="button"
-                    class="btn btn-light">click</button></div>
+            <div class="col border d-flex justify-content-center">
+                <button type="button" class="btn btn-light"></button>
+            </div>
+            <div class="col border d-flex justify-content-center">
+                <button type="button" class="btn btn-light"></button>
+            </div>
+            <div class="col border d-flex justify-content-center">
+                <button type="button" class="btn btn-light"></button>
+            </div>
         </div>
     </div>
     <div class="container text-center">
         <div class="row row-cols-3">
-            <div class="col border d-flex justify-content-center"><button type="button"
-                    class="btn btn-light">click</button></div>
-            <div class="col border d-flex justify-content-center"><button type="button"
-                    class="btn btn-light">click</button></div>
-            <div class="col border d-flex justify-content-center"><button type="button"
-                    class="btn btn-light">click</button></div>
+            <div class="col border d-flex justify-content-center">
+                <button type="button" class="btn btn-light"></button>
+            </div>
+            <div class="col border d-flex justify-content-center">
+                <button type="button" class="btn btn-light"></button>
+            </div>
+            <div class="col border d-flex justify-content-center">
+                <button type="button" class="btn btn-light"></button>
+            </div>
         </div>
     </div>
 
+    <div class="alert alert-success mt-3 d-none" role="alert" id="winnerAlert">
+        <strong>Winner!</strong> <span id="winnerName"></span> wins!
+    </div>
+    <div class="alert alert-danger mt-3 d-none" role="alert" id="drawAlert">
+        <strong>Draw!</strong> It's a draw!
+    </div>
 
 
-
-
+    <button type="button" class="btn btn-primary mt-3" id="resetButton">Reset Game</button>
 
     <script src="index.js"></script>
 </body>
